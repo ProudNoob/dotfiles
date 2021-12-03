@@ -81,7 +81,7 @@ function pic
     find /home/proudnoob/ntfs/Pics -type f | shuf -n1 | xargs -d '\n' catimg
 end
 
-function config -d 'dotfiles manager' --wrap "/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME"
+function config -d 'dotfiles manager' --wrap "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
     /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $argv
 end
 
