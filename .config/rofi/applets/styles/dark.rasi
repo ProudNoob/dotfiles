@@ -1,8 +1,18 @@
 * {
-  accent:           #A9C03F;
-  background:       #141c21;
-  background-light: #1C252A;
-  foreground:       #93a1a1;
-  on:               #5BB462;
-  off:              #DE635E;
+  accent:           #e4db73;
+  background:       #272822;
+  background-light: #272821;
+  foreground:       #fdfff1;
+  on:               #a6e12d;
+  off:              #f82570;
 }
+
+// OLD
+// * {
+//   accent:           #A9C03F;
+//   background:       #141c21;
+//   background-light: #1C252A;
+//   foreground:       #93a1a1;
+//   on:               #5BB462;
+//   off:              #DE635E;
+// }

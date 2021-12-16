@@ -16,9 +16,9 @@ dir="$HOME/.config/rofi/launchers/colorful"
 
 # dark
 ALPHA="#00000000"
-BG="#000000ff"
+BG="#272822"
 FG="#FFFFFFff"
-SELECT="#101010ff"
+SELECT="#272821"
 
 # light
 #ALPHA="#00000000"
@@ -26,23 +26,24 @@ SELECT="#101010ff"
 #FG="#000000ff"
 #SELECT="#f3f3f3ff"
 
-# accent colors
-COLORS=('#EC7875' '#61C766' '#FDD835' '#42A5F5' '#BA68C8' '#4DD0E1' '#00B19F' \
-		'#FBC02D' '#E57C46' '#AC8476' '#6D8895' '#EC407A' '#B9C244' '#6C77BB')
-ACCENT="${COLORS[$(( $RANDOM % 14 ))]}ff"
+# # NO RANDOM COLOR BULLSHIT
+# # accent colors
+# COLORS=('#EC7875' '#61C766' '#FDD835' '#42A5F5' '#BA68C8' '#4DD0E1' '#00B19F' \
+# 		'#FBC02D' '#E57C46' '#AC8476' '#6D8895' '#EC407A' '#B9C244' '#6C77BB')
+# ACCENT="${COLORS[$(( $RANDOM % 14 ))]}ff"
 
-# overwrite colors file
-cat > $dir/colors.rasi <<- EOF
-	/* colors */
+# # overwrite colors file
+# cat > $dir/colors.rasi <<- EOF
+# 	/* colors */
 
-	* {
-	  al:  $ALPHA;
-	  bg:  $BG;
-	  se:  $SELECT;
-	  fg:  $FG;
-	  ac:  $ACCENT;
-	}
-EOF
+# 	* {
+# 	  al:  $ALPHA;
+# 	  bg:  $BG;
+# 	  se:  $SELECT;
+# 	  fg:  $FG;
+# 	  ac:  $ACCENT;
+# 	}
+# EOF
 
 # comment these lines to disable random style
 #themes=($(ls -p --hide="launcher.sh" --hide="colors.rasi" $dir))
