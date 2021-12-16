@@ -88,3 +88,5 @@ end
 thefuck --alias | source
 
 starship init fish | source
+
+~/Packages/term-theme/bin/theme.sh monokai
