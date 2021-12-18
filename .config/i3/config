@@ -238,4 +238,4 @@ client.background       	$fg-color
 # for_window [title="^Steam Keyboard$"] floating enable
 
 # Set wallpaper
-exec --no-startup-id feh --bg-scale ~/Pictures/gzGUfRP.jpeg
+exec --no-startup-id "feh --bg-center ~/.config/wallpaper/monokai.jpg ~/.config/wallpaper/arch-monokai.png"

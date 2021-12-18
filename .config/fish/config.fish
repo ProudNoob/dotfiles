@@ -85,6 +85,10 @@ function config -d 'dotfiles manager' --wrap "/usr/bin/git --git-dir=$HOME/.dotf
     /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $argv
 end
 
+function x
+    exa -la --icons
+end
+
 thefuck --alias | source
 
 starship init fish | source
