@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Fira Code Nerd Font 8
+font pango:Fira Code Nerd Font 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -238,13 +238,13 @@ set $yellow-color #e4db73
 set $orange-color #fc961f
 set $purple-color #ae81ff
 
-# class                     border  	       backgr. 	    text    	    indicator 	    child_border
-client.focused          	$contrast-color    $bg-color	$yellow-color	$contrast-color	$contrast-color
-client.focused_inactive     $bg-color		   $bg-color	$yellow-color	$bg-color	    $bg-color
-client.unfocused          	$bg-color          $bg-color	$contrast-color	$bg-color	    $bg-color
-client.urgent         		$red-color		   $bg-color	$red-color	    $red-color      $red-color
-client.placeholder          $bg-color		   $bg-color	$yellow-color	$bg-color	    $bg-color
-client.background       	$fg-color
+# class                 border  	   backgr. 	text    	indicator 	child_border
+client.focused          $contrast-color    $bg-color	$yellow-color	$contrast-color	$contrast-color
+client.focused_inactive $bg-color	   $bg-color	$yellow-color	$bg-color	$bg-color
+client.unfocused     	$bg-color          $bg-color	$contrast-color	$bg-color	$bg-color
+client.urgent           $red-color	   $bg-color	$red-color	$red-color      $red-color
+client.placeholder      $bg-color	   $bg-color	$yellow-color	$bg-color	$bg-color
+client.background       $fg-color
 
 # Ignore Steam
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
@@ -265,3 +265,6 @@ exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/wall_style1_logo.png"
 
 #Picom and shit
 exec --no-startup-id "picom -b"
+
+# Disable mouse focus
+focus_follows_mouse no

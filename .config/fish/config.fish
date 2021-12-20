@@ -89,6 +89,10 @@ function x
     exa -la --icons
 end
 
+function wall
+    feh --bg-max --no-fehbg --randomize ~/ntfs/Pics/*
+end
+
 thefuck --alias | source
 
 starship init fish | source
