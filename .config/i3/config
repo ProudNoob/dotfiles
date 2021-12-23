@@ -264,7 +264,7 @@ client.background       $fg-color
 exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/wall_style1_logo.png"
 
 #Picom and shit
-exec --no-startup-id "picom -b"
+exec "picom -b"
 
 # Disable mouse focus
 focus_follows_mouse no
