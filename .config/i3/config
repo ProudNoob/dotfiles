@@ -201,7 +201,7 @@ bindsym $mod+c exec --no-startup-id " xclip -o -selection clipboard"
 
 # Gap config
 gaps inner 10
-# gaps outer 10
+# gaps outer 5
 # gaps horizontal 10
 # gaps vertical 10
 # gaps top 10

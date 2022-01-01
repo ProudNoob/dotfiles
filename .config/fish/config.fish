@@ -11,7 +11,7 @@ set -x FZF_DEFAULT_OPTS '--prompt="הּ " --preview "bat --color=always {1} --the
 
 
 function update -d "Update everything"
-    sudo pacman -Syu
+    sudo -b pacman -Syu
     yay
     cowsay -f dragon-and-cow Upgrade Completed | lolcat
 end
@@ -33,11 +33,11 @@ function cov
 end
 
 function vi -d 'vim alias for nvim'
-    nvim $argv
+    lvim $argv
 end
 
 function vim -d 'vim alias for nvim'
-    nvim $argv
+    lvim $argv
 end
 
 function weather
