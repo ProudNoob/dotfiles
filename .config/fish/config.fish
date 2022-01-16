@@ -11,7 +11,7 @@ set -x FZF_DEFAULT_OPTS '--prompt="הּ " --preview "bat --color=always {1} --the
 
 
 function update -d "Update everything"
-    sudo -b pacman -Syu
+    sudo pacman -Syu
     yay
     cowsay -f dragon-and-cow Upgrade Completed | lolcat
 end
