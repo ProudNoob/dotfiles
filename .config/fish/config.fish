@@ -10,9 +10,9 @@ set -x PATH $PATH $GOPATH/bin $DENO_INSTALL/bin $HOME/.local/bin
 set -x FZF_DEFAULT_OPTS '--prompt="הּ " --preview "bat --color=always {1} --theme=ansi" --layout=reverse --height=50% --info=inline --border --margin=1 --padding=1'
 
 
-function update -d "Update everything"
+function yay -d "Update everything"
     sudo pacman -Syu
-    yay
+    paru
     cowsay -f dragon-and-cow Upgrade Completed | lolcat
 end
 
@@ -45,9 +45,9 @@ function weather
 end
 
 # abbr yay="paru"
-function yay -d 'yayification' --wrap "paru"
-    paru $argv
-end
+#function yay -d 'yayification' --wrap "paru"
+#    paru $argv
+#end
 
 function php
     /usr/bin/php74 $argv

@@ -266,5 +266,8 @@ exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/wall_style1_logo.png"
 #Picom and shit
 exec "picom -b"
 
+#Redshift to prevent flashbang
+exec --no-startup-id "redshift"
+
 # Disable mouse focus
 focus_follows_mouse no
