@@ -32,14 +32,6 @@ function cov
     curl -L https://covid19-cli.wareneutron.com/history/charts/vietnam
 end
 
-function vi -d 'vim alias for nvim'
-    lvim $argv
-end
-
-function vim -d 'vim alias for nvim'
-    lvim $argv
-end
-
 function weather
     curl http://wttr.in/
 end
