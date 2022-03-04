@@ -20,6 +20,10 @@ function l
     ls -la --color $argv
 end
 
+function vi
+  nvim $argv
+end
+
 function fucking
     fuck --yeah
 end
