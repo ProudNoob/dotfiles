@@ -13,6 +13,7 @@ set -x FZF_DEFAULT_OPTS '--prompt="הּ " --preview "bat --color=always {1} --the
 function yay -d "Update everything"
     sudo pacman -Syu
     paru
+    ls -d ~/Packages/* | xargs -I{} git -C {} pull
     cowsay -f dragon-and-cow Upgrade Completed | lolcat
 end
 
