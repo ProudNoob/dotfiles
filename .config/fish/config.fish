@@ -14,6 +14,7 @@ function yay -d "Update everything"
     sudo pacman -Syu
     paru
     ls -d ~/Packages/* | xargs -I{} git -C {} pull
+    pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
     cowsay -f dragon-and-cow Upgrade Completed | lolcat
 end
 

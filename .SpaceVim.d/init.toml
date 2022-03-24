@@ -43,3 +43,5 @@ default_height = 30
 [[custom_plugins]]
 repo = "tanvirtin/monokai.nvim"
 merged = 0
+[[custom_plugins]]
+repo = "sheerun/vim-polyglot"
