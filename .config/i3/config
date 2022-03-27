@@ -266,7 +266,8 @@ client.background       $fg-color
 
 # Set wallpaper
 # exec --no-startup-id "feh --bg-center ~/.config/wallpaper/monokai.jpg ~/.config/wallpaper/arch-monokai.png"
-exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/wall_style1_logo.png"
+# exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/wall_style1_logo.png"
+exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/lantern.jpg ~/.config/wallpaper/CZtVvFx.png"
 
 #Picom and shit
 exec "picom -b"
