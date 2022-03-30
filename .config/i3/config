@@ -277,3 +277,6 @@ exec --no-startup-id "redshift"
 
 # Disable mouse focus
 focus_follows_mouse no
+
+# Float calendar window
+for_window [class="Yad" title="yad-calendar"] floating enable
