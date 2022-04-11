@@ -24,24 +24,30 @@
     enable_tabline_filetype_icon = true
     enable_statusline_mode = false
     automatic_update = true
+    filetree_direction = "left"
 
 # Enable autocomplete layer
 [[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "smart"
+    name = 'autocomplete'
+    auto_completion_return_key_behavior = "complete"
+    auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
-name = 'shell'
-default_position = 'top'
-default_height = 30
+    name = 'shell'
+    default_position = 'top'
+    default_height = 30
 
 [[layers]]
-  name = "lang#php"
+    name = "lang#php"
 [[layers]]
-  name = "colorscheme"
+    name = "colorscheme"
 [[custom_plugins]]
-repo = "tanvirtin/monokai.nvim"
-merged = 0
+    repo = "tanvirtin/monokai.nvim"
+    merged = false
 [[custom_plugins]]
-repo = "sheerun/vim-polyglot"
+    repo = "sheerun/vim-polyglot"
+[[layers]]
+    name = 'core'
+    filetree_show_hidden = true
+[[layers]]
+    name = "lang#toml"

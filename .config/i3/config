@@ -243,12 +243,12 @@ set $yellow-color #e4db73
 set $orange-color #fc961f
 set $purple-color #ae81ff
 
-# class                 border  	   backgr. 	text    	indicator 	child_border
-client.focused          $contrast-color    $bg-color	$yellow-color	$contrast-color	$contrast-color
-client.focused_inactive $bg-color	   $bg-color	$yellow-color	$bg-color	$bg-color
-client.unfocused     	$bg-color          $bg-color	$contrast-color	$bg-color	$bg-color
-client.urgent           $red-color	   $bg-color	$red-color	$red-color      $red-color
-client.placeholder      $bg-color	   $bg-color	$yellow-color	$bg-color	$bg-color
+# class                 border  	       backgr. 	  text    	        indicator 	     child_border
+client.focused          $contrast-color  $bg-color	$yellow-color   	$contrast-color	 $contrast-color
+client.focused_inactive $bg-color	       $bg-color	$yellow-color   	$bg-color	       $bg-color
+client.unfocused     	  $bg-color        $bg-color	$contrast-color 	$bg-color	       $bg-color
+client.urgent           $red-color	     $bg-color	$red-color	      $red-color       $red-color
+client.placeholder      $bg-color	       $bg-color	$yellow-color	    $bg-color	       $bg-color
 client.background       $fg-color
 
 # Ignore Steam
@@ -263,6 +263,7 @@ client.background       $fg-color
 # for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
 # for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
 # for_window [title="^Steam Keyboard$"] floating enable
+for_window [class="yad" title="yad-calendar"] floating enable
 
 # Set wallpaper
 # exec --no-startup-id "feh --bg-center ~/.config/wallpaper/monokai.jpg ~/.config/wallpaper/arch-monokai.png"
@@ -277,6 +278,3 @@ exec --no-startup-id "redshift"
 
 # Disable mouse focus
 focus_follows_mouse no
-
-# Float calendar window
-for_window [class="Yad" title="yad-calendar"] floating enable

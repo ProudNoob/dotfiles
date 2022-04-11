@@ -36,7 +36,7 @@ case "$1" in
         --title="yad-calendar" --borders=0 >/dev/null &
     ;;
 *)
-    echo "$DATE"
+    echo -e "DATE"
     ;;
 esac
 
