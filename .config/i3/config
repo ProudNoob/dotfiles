@@ -276,5 +276,11 @@ exec "picom -b"
 #Redshift to prevent flashbang
 exec --no-startup-id "redshift"
 
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
 # Disable mouse focus
 focus_follows_mouse no
