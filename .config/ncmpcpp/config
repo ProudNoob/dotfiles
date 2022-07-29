@@ -65,3 +65,5 @@ current_item_inactive_column_prefix = red
 current_item_inactive_column_suffix = red
 color1 = "white"
 color2 = "red"
+
+execute_on_song_change = songinfo

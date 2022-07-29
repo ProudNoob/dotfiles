@@ -23,6 +23,25 @@ font pango:Fira Code Nerd Font 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# Set monitors
+exec --no-startup-id "xrandr --output HDMI-0 --right-of DP-4"
+
+# run picom
+exec_always --no-startup-id picom &
+
+# run mpd
+exec_always --no-startup-id mpd &
+
+# Run polybar on launch
+exec_always --no-startup-id killall -q
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Run Dunst on launch
+exec_always --no-startup-id dunst &
+
+#Redshift to prevent flashbang
+exec --no-startup-id "redshift"
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -224,18 +243,6 @@ smart_borders no_gaps
 # Hide edge borders only if there is one window with no gaps
 hide_edge_borders smart_no_gaps
 
-# run mpd
-exec_always --no-startup-id mpd &
-
-# Set monitors
-exec --no-startup-id "xrandr --output HDMI-0 --right-of DP-4"
-
-# Run polybar on launch
-exec --no-startup-id "killall polybar && $HOME/.config/polybar/launch.sh"
-
-# Run Dunst on launch
-exec --no-startup-id dunst
-
 # Change color scheme to Monokai
 # ------------------------- COLORS  -------------------------
 set $fg-color #fdfff1
@@ -273,12 +280,6 @@ for_window [class="yad" title="yad-calendar"] floating enable
 # exec --no-startup-id "feh --bg-center ~/.config/wallpaper/monokai.jpg ~/.config/wallpaper/arch-monokai.png"
 # exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/wall_style1_logo.png"
 exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/lantern.jpg ~/.config/wallpaper/CZtVvFx.png"
-
-#Picom and shit
-exec "picom -b"
-
-#Redshift to prevent flashbang
-exec --no-startup-id "redshift"
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id "playerctl play-pause"
