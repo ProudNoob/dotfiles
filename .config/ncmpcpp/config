@@ -23,8 +23,22 @@ allow_for_physical_item_deletion = "no"
 visualizer_data_source = /tmp/mpd.fifo
 visualizer_output_name = "mpd_visualizer"
 visualizer_in_stereo   = "yes"
-visualizer_look 	   = ●●
-visualizer_type 	   = "ellipse"
+visualizer_type = spectrum
+#visualizer_look = "▒░"
+#visualizer_look = "◈░"
+# visualizer_look = "┃┃"
+# visualizer_look = ●┃
+visualizer_look = "█┇"
+#visualizer_look = "▒░"
+#visualizer_look = "▋▍"
+#visualizer_look = "▋█"
+#visualizer_look = "▋█"
+#visualizer_look = "▋░"
+#visualizer_look = "▋▓"
+#visualizer_look = "▋☰"
+#visualizer_look = "☰⛆"
+#visualizer_look = "☰▓"
+visualizer_color =  7, 5, 4, 3
 
 ### Appearance ###
 playlist_display_mode = "columns"
@@ -67,3 +81,6 @@ color1 = "white"
 color2 = "red"
 
 execute_on_song_change = songinfo
+
+startup_screen = "visualizer"
+startup_slave_screen = "playlist"
