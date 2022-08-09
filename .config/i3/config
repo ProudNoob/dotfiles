@@ -39,6 +39,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Run Dunst on launch
 exec_always --no-startup-id dunst &
 
+exec_always --no-startup-id syncthing
+
 #Redshift to prevent flashbang
 exec --no-startup-id "redshift"
 
