@@ -11,7 +11,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "monokai_pro"
+    colorscheme = "catppuccin"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -25,7 +25,9 @@
     enable_statusline_mode = false
     automatic_update = true
     filetree_direction = "left"
-
+[[custom_plugins]]
+  repo = "catppuccin/nvim"
+  merged = 0
 # Enable autocomplete layer
 [[layers]]
     name = 'autocomplete'

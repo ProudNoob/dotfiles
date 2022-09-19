@@ -26,8 +26,9 @@ exec --no-startup-id dex --autostart --environment i3
 # Set monitors
 exec --no-startup-id "xrandr --output HDMI-0 --right-of DP-4"
 
+# TODO: picom shit the bed and runs like ASS
 # run picom
-exec_always --no-startup-id picom &
+# exec_always --no-startup-id picom &
 
 # run mpd
 exec_always --no-startup-id mpd &
@@ -208,14 +209,14 @@ bindsym $mod+r mode "resize"
 #}
 
 # Bind rofi to Ctrl+Space like MacOS
-bindsym Control+space exec --no-startup-id "$HOME/.config/rofi/launchers/colorful/launcher.sh"
+bindsym Control+space exec --no-startup-id "sh $HOME/.config/rofi/bin/launcher"
 
 bindsym $mod+Shift+g mode "gaming"
 mode "gaming" {
   bindsym $mod+Shift+g mode "default"
 }
 
-bindsym Control+Mod1+Delete exec --no-startup-id "$HOME/.config/rofi/bin/menu_powermenu"
+bindsym Control+Mod1+Delete exec --no-startup-id "sh $HOME/.config/rofi/bin/powermenu"
 
 # Bind Flameshot capture to Ctrl and \
 bindsym Control+bar exec --no-startup-id "flameshot gui"
@@ -247,14 +248,14 @@ hide_edge_borders smart_no_gaps
 
 # Change color scheme to Monokai
 # ------------------------- COLORS  -------------------------
-set $fg-color #fdfff1
-set $bg-color #272821
-set $contrast-color #3b3c35
-set $red-color #f82570
-set $green-color #a6e12d
-set $yellow-color #e4db73
-set $orange-color #fc961f
-set $purple-color #ae81ff
+set $fg-color #cdd6f4
+set $bg-color #1e1e2e
+set $contrast-color #585b70
+set $red-color #f38ba8
+set $green-color #a6e3a1
+set $yellow-color #f9e2af
+set $orange-color #fab387
+set $purple-color #cba6f7
 
 # class                 border  	       backgr. 	  text    	        indicator 	     child_border
 client.focused          $contrast-color  $bg-color	$yellow-color   	$contrast-color	 $contrast-color
@@ -276,7 +277,6 @@ client.background       $fg-color
 # for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
 # for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
 # for_window [title="^Steam Keyboard$"] floating enable
-for_window [class="yad" title="yad-calendar"] floating enable
 
 # Set wallpaper
 # exec --no-startup-id "feh --bg-center ~/.config/wallpaper/monokai.jpg ~/.config/wallpaper/arch-monokai.png"

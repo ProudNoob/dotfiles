@@ -15,11 +15,16 @@ function yay -d "Update everything"
     paru
     ls -d ~/Packages/* | xargs -I{} git -C {} pull
     pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
+    fisher update
     cowsay -f dragon-and-cow Upgrade Completed | lolcat
 end
 
 function l
-    ls -la --color $argv
+    ls -lah $argv
+end
+
+function ll
+    ls -lah $argv
 end
 
 function vi
@@ -84,15 +89,30 @@ function config -d 'dotfiles manager' --wrap "/usr/bin/git --git-dir=$HOME/.dotf
 end
 
 function x
-    exa -la --icons
+    exa -bghHliaS --icons
+end
+
+function cp
+  rsync -avz $argv
 end
 
 function wall
     feh --bg-max --no-fehbg --randomize ~/ntfs/Pics/*
 end
 
+function n
+    neofetch
+end
+
 thefuck --alias | source
 
 starship init fish | source
 
-~/Packages/term-theme/bin/theme.sh monokai
+zoxide init fish | source
+
+if set -q ZELLIJ
+else
+  zellij
+end
+
+# ~/Packages/term-theme/bin/theme.sh monokai
