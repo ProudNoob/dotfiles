@@ -154,6 +154,27 @@
 
     # The `style` can be specified to pick a specific face.
     #style: Bold Italic
+font:
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: Bold Italic
+  glyph_offset:
+    x: 0
+    y: 0
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+  offset:
+    x: 0
+    y: 0
+  size: 9
+  use_thin_strokes: true
 
   # Point size
   #size: 11.0
