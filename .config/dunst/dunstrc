@@ -11,13 +11,12 @@
     indicate_hidden = yes
 	shrink = yes
 	transparency = 0
-	notification_height = 0
 	separator_height = 1
 	padding = 10
 	horizontal_padding = 10
 	frame_width = 3
-	frame_color = "#2e2e2e"
-	separator_color = frame
+	frame_color = "#89B4FA"
+	separator_color= frame
 	sort = yes
 	idle_threshold = 120
 	font = Liga SFMono Nerd Font Bold 9
@@ -32,7 +31,6 @@
 	hide_duplicate_count = false
 	show_indicators = yes
 	icon_position = left
-	show_icons = left
 	max_icon_size = 64
 	icon_path = /usr/share/icons/Papirus/16x16/status/:/usr/share/icons/Papirus/16x16/devices/:/usr/share/icons/Papirus/16x16/apps/
 	sticky_history = yes
@@ -42,46 +40,39 @@
 	always_run_script = true
 	title = Dunst
 	class = Dunst
-	startup_notification = false
 	force_xinerama = false
 	corner_radius = 10
-    [experimental]
+[experimental]
 	per_monitor_dpi = false
-[shortcuts]
-	close =
-	close_all =
-	history =
-	context =
 [Discord]
-appname = Discord
-format = "Discord\n%s\n%b"
+	appname = Discord
+	format = "Discord\n%s\n%b"
 [spotify]
     history_ignore = yes
     appname = Spotify
     format = "<b><span foreground='#A3BE8C'></span> %a</b>\n%s"
     max_icon_size = 128
     timeout = 10
-	 frame_color="#A3BE8C"
+	frame_color="#A3BE8C"
 
 [urgency_low]
-	background  = "#2e2e2e"
-	foreground  = "#d6d6d6"
+	background = "#1E1E2E"
+	foreground = "#CDD6F4"
 	timeout     = 2
 	# icon        = "~/.config/dunst/icons/030-notification bell.svg"
 
 [urgency_normal]
-	background  = "#2e2e2e"
-	foreground  = "#d6d6d6"
+	background = "#1E1E2E"
+	foreground = "#CDD6F4"
 	timeout = 2
 	# icon        = "~/.config/dunst/icons/030-notification bell.svg"
 
 [urgency_critical]
-	background  = "#2e2e2e"
-	foreground  = "#d6d6d6"
+	background = "#1E1E2E"
+	foreground = "#CDD6F4"
+	frame_color = "#FAB387"
 	timeout = 2
 	# icon        = "~/.config/dunst/icons/030-notification bell.svg"
-
-
 [Youtube Music]
    history_ignore = yes
    appname = "Youtube Music"

@@ -96,8 +96,8 @@ case $chosen in
 		ans=$(rdialog &)
 		if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
 			mpc -q pause
-			amixer set Master mute
-			betterlockscreen -l
+			# amixer set Master mute
+			# betterlockscreen -l
 			systemctl suspend
 		elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
 			exit

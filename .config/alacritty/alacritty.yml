@@ -22,7 +22,8 @@
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
-
+env:
+  TERM: xterm-256color
 #window:
   # Window dimensions (changes require restart)
   #
@@ -245,6 +246,12 @@ font:
   #  text: CellBackground
   #  cursor: CellForeground
 
+cursor:
+  style:
+    shape: block
+  thickness: 0.15
+  unfocused_hollow: true
+  vi_mode_style: block
   # Search colors
   #
   # Colors used for the search bar and match highlighting.
@@ -380,6 +387,11 @@ font:
 
   # Visual bell animation color.
   #color: '#ffffff'
+
+  bell:
+  animation: EaseOutExpo
+  color: '#ffffff'
+  duration: 0
 
   # Bell Command
   #
