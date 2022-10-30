@@ -29,7 +29,7 @@ exec --no-startup-id "xrandr --output HDMI-0 --right-of DP-4"
 # TODO: picom shit the bed and runs like ASS, so let's give it a try
 # run picom
 # exec_always --no-startup-id picom &
-exec "picom -b"
+# exec "picom -b"
 
 # run mpd
 exec_always --no-startup-id mpd &
@@ -69,7 +69,7 @@ exec --no-startup-id "redshift"
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -282,7 +282,10 @@ client.background       $fg-color
 # Set wallpaper
 # exec --no-startup-id "feh --bg-center ~/.config/wallpaper/monokai.jpg ~/.config/wallpaper/arch-monokai.png"
 # exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/wall_style1_logo.png"
-exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/lantern.jpg ~/.config/wallpaper/CZtVvFx.png"
+## Monokai wallpapers
+#exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/lantern.jpg ~/.config/wallpaper/CZtVvFx.png"
+## Cattpuccin
+exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/misc/windows-error.jpg  ~/.config/wallpaper/os/arch-black-4k.png"
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id "playerctl play-pause"
