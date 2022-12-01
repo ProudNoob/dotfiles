@@ -116,3 +116,4 @@ else
 end
 
 # ~/Packages/term-theme/bin/theme.sh monokai
+fish_add_path /home/proudnoob/.spicetify
