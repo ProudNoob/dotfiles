@@ -3,9 +3,10 @@ rofi \
 	-show drun \
 	-modi run,drun,ssh \
 	-scroll-method 0 \
-	-drun-match-fields all \
+	-drun-match-fields name \
 	-drun-display-format "{name}" \
 	-no-drun-show-actions \
-	-terminal kitty \
-	-kb-cancel Alt-F1 \
+	-terminal konsole \
+	-kb-cancel Escape \
+	-matching fuzzy \
 	-theme "$HOME"/.config/rofi/config/launcher.rasi
