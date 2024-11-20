@@ -14,7 +14,6 @@ function yay -d "Update everything"
     sudo pacman -Syu
     paru
     ls -d ~/Packages/* | xargs -I{} git -C {} pull
-    python3 -m pip list --outdated --format=json | jq -r '.[] | "\(.name)==\(.latest_version)"' | xargs -n1 pip3 install -U
     fisher update
     cowsay -f dragon-and-cow Upgrade Completed | lolcat
 end
@@ -102,6 +101,12 @@ end
 
 function n
     neofetch
+end
+
+function fuckingaudio
+  killall easyeffect
+  systemctl --user restart pipewire.service
+  easyeffect
 end
 
 thefuck --alias | source

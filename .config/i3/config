@@ -27,7 +27,7 @@ font pango:Fira Code Nerd Font 12
 exec --no-startup-id dex --autostart --environment i3
 
 # Set monitors
-exec --no-startup-id "xrandr --output HDMI-0 --right-of DP-4"
+exec --no-startup-id "xrandr --output HDMI-0 --right-of DP-4 --rotate left"
 
 # TODO: picom shit the bed and runs like ASS, so let's give it a try
 # run picom
@@ -40,6 +40,11 @@ exec_always --no-startup-id mpd &
 # Run polybar on launch
 exec_always --no-startup-id killall -q
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# i3blocks
+# bar {
+#   status_command 2>/tmp/i3blocks.err i3blocks -vvv | tee /tmp/i3blocks.out
+# }
 
 # Run Dunst on launch
 exec_always --no-startup-id dunst &
@@ -288,7 +293,7 @@ client.background       $fg-color
 ## Monokai wallpapers
 #exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/lantern.jpg ~/.config/wallpaper/CZtVvFx.png"
 ## Cattpuccin
-exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/misc/windows-error.jpg  ~/.config/wallpaper/os/arch-black-4k.png"
+exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/os/arch-black-4k.png ~/.config/wallpaper/misc/windows-error.jpg"
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id "playerctl play-pause"
