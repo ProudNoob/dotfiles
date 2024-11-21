@@ -27,7 +27,7 @@ font pango:Fira Code Nerd Font 12
 exec --no-startup-id dex --autostart --environment i3
 
 # Set monitors
-exec --no-startup-id "xrandr --output HDMI-0 --right-of DP-4 --rotate left"
+exec --no-startup-id "xrandr --output DP-4 --pos 0x0 --output HDMI-0 --pos 1920x-652 --rotate left --scale 1x1"
 
 # TODO: picom shit the bed and runs like ASS, so let's give it a try
 # run picom
