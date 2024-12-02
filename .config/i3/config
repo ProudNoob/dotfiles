@@ -225,7 +225,8 @@ mode "gaming" {
   bindsym $mod+Shift+g mode "default"
 }
 
-bindsym Control+Mod1+Delete exec --no-startup-id "sh $HOME/.config/rofi/bin/powermenu"
+# bindsym Control+Mod1+Delete exec --no-startup-id "sh $HOME/.config/rofi/bin/powermenu"
+bindsym Control+Mod1+Delete exec --no-startup-id "sh $HOME/.config/dmenu/dmenu.sh"
 
 # Bind Flameshot capture to Ctrl and \
 bindsym Control+bar exec --no-startup-id "flameshot gui"
@@ -292,7 +293,7 @@ client.background       $fg-color
 # exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/wall_style1_logo.png"
 ## Monokai wallpapers
 #exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/lantern.jpg ~/.config/wallpaper/CZtVvFx.png"
-## Cattpuccin
+## Catppuccin wallpapers
 exec --no-startup-id "feh --bg-fill ~/.config/wallpaper/os/arch-black-4k.png ~/.config/wallpaper/misc/windows-error.jpg"
 
 # Media player controls
