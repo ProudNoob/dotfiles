@@ -88,7 +88,7 @@ function config -d 'dotfiles manager' --wrap "/usr/bin/git --git-dir=$HOME/.dotf
 end
 
 function x
-    exa -bghHliaS --icons
+    eza -bghHliaS --icons
 end
 
 function cp

@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dprompt\x3d\x22\ufb34\x20\x22\x20\x2d\x2dpreview\x20\x22bat\x20\x2d\x2dcolor\x3dalways\x20\x7b1\x7d\x20\x2d\x2dtheme\x3dansi\x22\x20\x2d\x2dlayout\x3dreverse\x20\x2d\x2dheight\x3d50\x25\x20\x2d\x2dinfo\x3dinline\x20\x2d\x2dborder\x20\x2d\x2dmargin\x3d1\x20\x2d\x2dpadding\x3d1
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Latte\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ecatppuccin/fish
@@ -24,7 +24,7 @@ SETUVAR fish_color_operator:7cafc2
 SETUVAR fish_color_param:d8d8d8
 SETUVAR fish_color_quote:f7ca88
 SETUVAR fish_color_redirection:d8d8d8
-SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_search_match:white\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Options for the power menu
-options="Shutdown Reboot Lock Logout"
+options="Shutdown Sleep Reboot Lock Logout"
 
 # Display the menu and capture the selected option
 chosen=$(echo "$options" | tr ' ' '\n' | dmenu \
@@ -14,9 +14,9 @@ chosen=$(echo "$options" | tr ' ' '\n' | dmenu \
 # Perform the action based on the selection
 case "$chosen" in
     Shutdown) systemctl poweroff ;;
+    Sleep) systemctl suspend ;;
     Reboot) systemctl reboot ;;
     Lock) loginctl lock-session ;;
     Logout) i3-msg exit ;;
     *) exit 1 ;; # Exit if no valid option was chosen
 esac
-
